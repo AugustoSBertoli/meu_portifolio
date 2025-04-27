@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  padding: 20px;
+  background-color: #000000;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 50px;
+}
+
+.cabecalho__menu__link {
+  font-size: 15px;
+  text-shadow: 1px 1px 3px #EAEAEA;
+}
+
+
+
+/* LINKS DO TOPO (Instagram etc) */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000000;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* MENU PRINCIPAL */
+.cabecalho__menu {
+  display: flex;
+  gap: 40px;
+}
+
+.cabecalho__menu__link {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #e0e0e0;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.cabecalho__menu__link:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  text-shadow: 2px 2px 6px #ffffff66;
+}
+
+/* LINKS (INSTAGRAM, LINKEDIN, GITHUB) */
+.cabecalho__icon{
+  width: 30px; 
+  height: 30px; 
+}
+.cabecalho__links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cabecalho__links a {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  gap: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cabecalho__links .instagram {
+  background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #6f00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 8px #fa7e1e;
+}
+
+.cabecalho__links .linkedin {
+  color: #0077b5;
+  text-shadow: 1px 1px 6px #0077b5;
+}
+
+.cabecalho__links .github {
+  color: #999999;
+  text-shadow: 1px 1px 6px #999999;
+}
+
+.cabecalho__links a:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Corpo da página */
+body {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  background-color: #0e0e0e;
+  color: #EAEAEA;
+}
+
+/* SEÇÃO SOBRE MIM */
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.apresentacao__sobremim {
+  max-width: 700px;
+  width: 90%;
+}
+
+.apresentacao__titulo {
+  font-size: 37px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #c9c9c9;
+}
+
+.apresentacao__texto {
+  font-size: 17px;
+}
+
+/* SEÇÃO HABILIDADES */
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.habilidades__titulo {
+  font-size: 37px;
+  text-shadow: 1px 1px 3px #c9c9c9;
+}
+
+.habilidades__texto {
+  font-size: 17px;
+  margin: 15px 0 30px;
+}
+
+.habilidades__icones {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.habilidades__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #EAEAEA;
+  text-shadow: 1px 1px 6px #EAEAEA;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.habilidades__item:hover {
+  transform: scale(1.1);
+}
+
+.habilidades__icon {
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+/* SEÇÃO CONTATOS */
+.contatos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.contatos__titulo{
+  font-size: 37px;
+  text-shadow: 1px 1px 3px #c9c9c9;
+}
+
+.contatos__texto {
+  font-size: 17px;
+  margin: 15px 0 30px;
+}
+
+.contatos__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contatos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contatos__icon {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+}
+
+.contatos__icon:hover {
+  transform: scale(1.1);
+}
+
+.social__text {
+  font-size: 16px;
+  color: #EAEAEA;
+  text-shadow: 1px 1px 3px #c9c9c9;
+}
+
+.contatos__curriculo {
+  display: flex;
+  justify-content: center;  
+  width: 100%;              
+  margin-top: 30px; 
+}
+
+.cv__download {
+  background-color: #EAEAEA;
+  color: #000000; 
+  padding: 20px 20px;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-top: 30px;
+}
+
+.cv__download:hover {
+  transform: scale(1.1);
+}
+
+
+/* RODAPE */
+.rodape {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+  background-color: #EAEAEA;
+  color: #000000;
+  font-size: 10px;
+}
