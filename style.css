@@ -6,10 +6,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cor-fundo: #1C1C1C;
+  --cor-fmenu: #000000;
+  --cor-conteudo: #EAEAEA;
+}
+
 /* CABEÇALHO */
 .cabecalho {
-  padding: 20px;
-  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--cor-fmenu);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .cabecalho__menu {
@@ -19,20 +30,7 @@
 
 .cabecalho__menu__link {
   font-size: 15px;
-  text-shadow: 1px 1px 3px #EAEAEA;
-}
-
-
-
-/* LINKS DO TOPO (Instagram etc) */
-.cabecalho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #000000;
-  flex-wrap: wrap;
-  gap: 20px;
+  text-shadow: 1px 1px 3px var(--cor-conteudo);
 }
 
 /* MENU PRINCIPAL */
@@ -57,8 +55,8 @@
 
 /* LINKS (INSTAGRAM, LINKEDIN, GITHUB) */
 .cabecalho__icon{
-  width: 30px; 
-  height: 30px; 
+  width: 35px; 
+  height: 35px; 
 }
 .cabecalho__links {
   display: flex;
@@ -77,24 +75,6 @@
   transition: transform 0.3s ease;
 }
 
-.cabecalho__links .instagram {
-  background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #6f00ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 8px #fa7e1e;
-}
-
-.cabecalho__links .linkedin {
-  color: #0077b5;
-  text-shadow: 1px 1px 6px #0077b5;
-}
-
-.cabecalho__links .github {
-  color: #999999;
-  text-shadow: 1px 1px 6px #999999;
-}
-
 .cabecalho__links a:hover {
   transform: translateY(-2px);
 }
@@ -103,8 +83,29 @@
 /* Corpo da página */
 body {
   font-family: "Special Gothic Expanded One", sans-serif;
-  background-color: #0e0e0e;
-  color: #EAEAEA;
+  background-color: var(--cor-fundo);
+  color: var(--cor-conteudo);
+}
+
+/* Estilo botão*/
+#botao__topo {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: var(--cor-fmenu);
+  color: var(--cor-conteudo);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+#botao__topo:hover {
+  background-color: #444;
+  transform: scale(1.1);
 }
 
 /* SEÇÃO SOBRE MIM */
@@ -126,7 +127,7 @@ body {
 .apresentacao__titulo {
   font-size: 37px;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 3px #c9c9c9;
+  text-shadow: 1px 1px 3px var(--cor-conteudo);;
 }
 
 .apresentacao__texto {
@@ -146,7 +147,7 @@ body {
 
 .habilidades__titulo {
   font-size: 37px;
-  text-shadow: 1px 1px 3px #c9c9c9;
+  text-shadow: 1px 1px 3px var(--cor-conteudo);;
 }
 
 .habilidades__texto {
@@ -165,8 +166,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #EAEAEA;
-  text-shadow: 1px 1px 6px #EAEAEA;
+  color: var(--cor-conteudo);
+  text-shadow: 1px 1px 6px var(--cor-conteudo);
   font-size: 1rem;
   transition: transform 0.3s ease;
 }
@@ -182,6 +183,26 @@ body {
   margin-bottom: 10px;
 }
 
+/* SEÇÃO PROJETOS */
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.projetos__titulo {
+  font-size: 37px;
+  text-shadow: 1px 1px 3px var(--cor-conteudo);;
+}
+
+.projetos__texto {
+  font-size: 17px;
+  margin: 15px 0 30px;
+}
+
 /* SEÇÃO CONTATOS */
 .contatos{
   display: flex;
@@ -194,7 +215,7 @@ body {
 
 .contatos__titulo{
   font-size: 37px;
-  text-shadow: 1px 1px 3px #c9c9c9;
+  text-shadow: 1px 1px 3px var(--cor-conteudo);;
 }
 
 .contatos__texto {
@@ -230,8 +251,8 @@ body {
 
 .social__text {
   font-size: 16px;
-  color: #EAEAEA;
-  text-shadow: 1px 1px 3px #c9c9c9;
+  color: var(--cor-conteudo);
+  text-shadow: 1px 1px 3px var(--cor-conteudo);;
 }
 
 .contatos__curriculo {
@@ -242,8 +263,8 @@ body {
 }
 
 .cv__download {
-  background-color: #EAEAEA;
-  color: #000000; 
+  background-color: var(--cor-conteudo);
+  color: var(--cor-fmenu);; 
   padding: 20px 20px;
   border: none;
   border-radius: 7px;
@@ -264,7 +285,7 @@ body {
   margin-top: 80px;
   padding: 20px;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: var(--cor-conteudo);
   color: #000000;
   font-size: 10px;
 }
