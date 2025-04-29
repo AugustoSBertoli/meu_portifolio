@@ -21,6 +21,7 @@
   padding: 20px 40px;
   background-color: var(--cor-fmenu);
   flex-wrap: wrap;
+  width: 100%;
   gap: 20px;
 }
 
