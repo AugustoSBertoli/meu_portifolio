@@ -203,11 +203,6 @@ body {
   margin: 15px 0 30px;
 }
 
-.projetos__descricao {
-  font-size: 10px;
-  margin: 7px 0 30px;
-}
-
 .projetos__links {
   display: flex;
   flex-wrap: wrap;
