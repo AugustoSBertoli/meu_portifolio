@@ -199,8 +199,13 @@ body {
 }
 
 .projetos__texto {
-  font-size: 10px;
+  font-size: 17px;
   margin: 15px 0 30px;
+}
+
+.projetos__descricao {
+  font-size: 10px;
+  margin: 7px 0 30px;
 }
 
 .projetos__links {
