@@ -269,13 +269,13 @@ body {
 
 @media (max-width: 768px) {
   .cabecalho {
-    padding: 15px 20px;  /* Menos padding nas laterais */
+    padding: 15px 20px;
   }
   .apresentacao,
   .habilidades,
   .projetos,
   .contatos {
     padding: 40px 15px;
-    max-width: 95%;      /* Ocupa quase toda a largura da tela */
+    max-width: 95%;
   }
 }
