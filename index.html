@@ -5,29 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Augusto De Souza Bertoli - Estudante ADS</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
-<body id="topo">
-  <header class="cabecalho">
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" href="#sobre-mim">Sobre Mim</a>
-      <a class="cabecalho__menu__link" href="#habilidades">Habilidades</a>
-      <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
-      <a class="cabecalho__menu__link" href="#contatos">Contatos</a>
+<body>
+<header class="cabeçalho">
+  <div class="container">
+    <input type="checkbox" id="menu" class="container__botao">
+    <label for="menu">
+      <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+    </label>
+
+    <ul class="lista-menu">
+      <li class="lista-menu__item"><a href="#sobre-mim" class="lista-menu__link">Sobre Mim</a></li>
+      <li class="lista-menu__item"><a href="#habilidades" class="lista-menu__link">Habilidades</a></li>
+      <li class="lista-menu__item"><a href="#projetos" class="lista-menu__link">Projetos</a></li>
+      <li class="lista-menu__item"><a href="#contatos" class="lista-menu__link">Contatos</a></li>
+    </ul>
+
+  </div>
+
+  <nav class="opções">
+      <a class="opções__link" href="#sobre-mim">Sobre Mim</a>
+      <a class="opções__link" href="#habilidades">Habilidades</a>
+      <a class="opções__link" href="#projetos">Projetos</a>
+      <a class="opções__link" href="#contatos">Contatos</a>
     </nav>
-    <div class="cabecalho__links">
-      <a href="https://instagram.com/augusto.bertoli">
-        <img src="assets/instagram.png" alt="Instagram" class="cabecalho__icon">
-      </a>
-      <a href="https://linkedin.com/in/augusto-de-souza-bertoli">
-        <img src="assets/linkedin.png" alt="Linkedin" class="cabecalho__icon">
-      </a>
-      <a href="https://github.com/AugustoSBertoli">
-        <img src="assets/github.png" alt="GitHub" class="cabecalho__icon">
-      </a>
-    </div>
-  </header>
+
+  <div class="container__links">
+
+    <a href="https://www.instagram.com/augusto.bertoli"><img src="img/instagram.png" alt="Instagram" class="container__icon"></a>
+    <a href="https://linkedin.com/in/augusto-de-souza-bertoli"><img src="img/linkedin.png" alt="LinkedIn" class="container__icon"></a>
+    <a href="https://github.com/AugustoSBertoli"><img src="img/github.png" alt="GitHub" class="container__icon"></a>
+  </div>
+</header>
+
 
   <main class="apresentacao">
     <section class="apresentacao__sobremim" id="sobre-mim">
@@ -38,26 +50,25 @@
 
   <section class="habilidades" id="habilidades">
     <h2 class="habilidades__titulo">Habilidades</h2>
-    <p class="habilidades__texto">Habilidades que estou em aprendizado</p>
     <div class="habilidades__icones">
       <div class="habilidades__item">
-        <img src="assets/c-sharp.png" alt="C#" class="habilidades__icon">
+        <img src="img/c-sharp.png" alt="C#" class="habilidades__icon">
         <span>C#</span>
       </div>
       <div class="habilidades__item">
-        <img src="assets/python.png" alt="Python" class="habilidades__icon">
+        <img src="img/python.png" alt="Python" class="habilidades__icon">
         <span>Python</span>
       </div>
       <div class="habilidades__item">
-        <img src="assets/sql.png" alt="SQL" class="habilidades__icon">
+        <img src="img/sql.png" alt="SQL" class="habilidades__icon">
         <span>SQL</span>
       </div>
       <div class="habilidades__item">
-        <img src="assets/html5.png" alt="HTML5" class="habilidades__icon">
+        <img src="img/html5.png" alt="HTML5" class="habilidades__icon">
         <span>HTML5</span>
       </div>
       <div class="habilidades__item">
-        <img src="assets/css.png" alt="CSS3" class="habilidades__icon">
+        <img src="img/css.png" alt="CSS3" class="habilidades__icon">
         <span>CSS3</span>
       </div>
     </div>
@@ -69,19 +80,19 @@
     <div class="projetos__links">
       <div class="projetos__item">
         <a href="https://augustosbertoli.github.io/Carrinho_de_compras/">
-          <img src="assets/Mcarrinho.PNG" alt="Carrinho de compras" class="projetos__img img-carrinho">
+          <img src="img/Mcarrinho.PNG" alt="Carrinho de compras" class="projetos__img img-carrinho">
         </a>
         <p class="tema__texto">Sistema Carrinho De Compras</p>
       </div>
       <div class="projetos__item">
         <a href="https://github.com/AugustoSBertoli/Lista-de-Tarefas-Simples-em-Python/blob/main/lista_de_tarefas.py">
-          <img src="assets/ML.T.PNG" alt="Lista de tarefas" class="projetos__img img-lista">
+          <img src="img/ML.T.PNG" alt="Lista de tarefas" class="projetos__img img-lista">
         </a>
         <p class="tema__texto">Lista De Tarefas</p>
       </div>
       <div class="projetos__item">
         <a href="https://augustosbertoli.github.io/site_alura_plus/">
-          <img src="assets/SiteAlura.PNG" alt="Site Alura+" class="projetos__img img-alura">
+          <img src="img/SiteAlura.PNG" alt="Site Alura+" class="projetos__img img-alura">
         </a>
         <p class="tema__texto">Site Alura+</p>
       </div>
@@ -94,25 +105,25 @@
     <div class="contatos__links">
       <div class="contatos__item">
         <a href="https://instagram.com/augusto.bertoli">
-          <img src="assets/instagram.png" alt="Instagram" class="contatos__icon">
+          <img src="img/instagram.png" alt="Instagram" class="contatos__icon">
         </a>
         <p class="social__texto">Instagram</p>
       </div>
       <div class="contatos__item">
         <a href="https://linkedin.com/in/augusto-de-souza-bertoli">
-          <img src="assets/linkedin.png" alt="Linkedin" class="contatos__icon">
+          <img src="img/linkedin.png" alt="Linkedin" class="contatos__icon">
         </a>
         <p class="social__texto">Linkedin</p>
       </div>
       <div class="contatos__item">
         <a href="https://github.com/AugustoSBertoli">
-          <img src="assets/github.png" alt="GitHub" class="contatos__icon">
+          <img src="img/github.png" alt="GitHub" class="contatos__icon">
         </a>
         <p class="social__texto">GitHub</p>
       </div>
       <div class="contatos__item">
         <a href="mailto:augustosbertoli@gmail.com">
-          <img src="assets/gmail.png" alt="E-mail" class="contatos__icon">
+          <img src="img/gmail.png" alt="E-mail" class="contatos__icon">
         </a>
         <p class="social__texto">Gmail</p>
       </div>
@@ -124,7 +135,7 @@
     </div>
   </section>
 
-  <a href="#topo" id="botao__topo">&#8593;</a>
+  <a href="#" id="botao__topo">&#8593;</a>
 
   <footer class="rodape">
     <p>Desenvolvido por Augusto De Souza Bertoli</p>

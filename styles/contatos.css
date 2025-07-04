@@ -1,0 +1,46 @@
+.contatos__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contatos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contatos__icon {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+}
+
+.contatos__icon:hover {
+  transform: scale(1.1);
+}
+
+.contatos__curriculo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cv__download {
+  background-color: var(--branco);
+  color: var(--preto);
+  padding: 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cv__download:hover {
+  transform: scale(1.1);
+}
+

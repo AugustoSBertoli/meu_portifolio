@@ -1,10 +1,16 @@
+@import url("styles/header.css");
+@import url("styles/habilidades.css");
+@import url("styles/projetos.css");
+@import url("styles/contatos.css");
+@import url("styles/rodape.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 
 :root {
   --cor-fundo: #1C1C1C;
-  --cor-menu: #000;
-  --cor-conteudo: #EAEAEA;
-  --sombra-texto: 1px 1px 3px var(--cor-conteudo);
+  --preto: #000000;
+  --branco: #EAEAEA;
+  --sombra-texto: 1px 1px 3px var(--branco);
 }
 
 * {
@@ -16,76 +22,7 @@
 body {
   font-family: 'Special Gothic Expanded One', sans-serif;
   background-color: var(--cor-fundo);
-  color: var(--cor-conteudo);
-}
-
-/* CABEÇALHO */
-.cabecalho {
-  overflow-x: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: var(--cor-menu);
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.cabecalho__menu {
-  display: flex;
-  gap: 40px;
-}
-
-.cabecalho__menu__link {
-  font-size: 16px;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: var(--sombra-texto);
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.cabecalho__menu__link:hover {
-  transform: translateY(-2px);
-  text-shadow: 2px 2px 6px #ffffff66;
-}
-
-.cabecalho__links {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.cabecalho__icon {
-  width: 35px;
-  height: 35px;
-  transition: transform 0.3s ease;
-}
-
-.cabecalho__links a:hover .cabecalho__icon {
-  transform: translateY(-2px);
-}
-
-/* BOTÃO VOLTAR AO TOPO */
-#botao__topo {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  background-color: var(--cor-menu);
-  color: var(--cor-conteudo);
-  border: none;
-  border-radius: 100px;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-#botao__topo:hover {
-  background-color: #444;
-  transform: scale(1.1);
+  color: var(--branco);
 }
 
 /* SEÇÕES GERAIS */
@@ -93,6 +30,7 @@ body {
 .habilidades,
 .projetos,
 .contatos {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,164 +56,4 @@ body {
 .contatos__texto {
   font-size: 17px;
   margin: 15px 0 30px;
-}
-
-/* HABILIDADES */
-.habilidades__icones {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.habilidades__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-  text-shadow: 1px 1px 6px var(--cor-conteudo);
-  transition: transform 0.3s ease;
-}
-
-.habilidades__item:hover {
-  transform: scale(1.1);
-}
-
-.habilidades__icon {
-  width: 70px;
-  height: 70px;
-  margin: 15px 0 10px;
-}
-
-/* PROJETOS */
-.projetos__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.projetos__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.projetos__img {
-  border-radius: 10%;
-  border: 3px solid var(--cor-conteudo);
-  box-shadow: 1px 1px 6px var(--cor-conteudo);
-  transition: transform 0.3s;
-}
-
-.projetos__img:hover {
-  transform: scale(2.2);
-}
-
-.img-carrinho {
-  max-width: 200px;
-}
-
-.img-lista {
-  max-width: 100px;
-}
-
-.img-alura {
-  max-width: 200px;
-  aspect-ratio: 7 / 4;
-  object-fit: cover;
-}
-
-@media (max-width: 480px) {
-  .img-carrinho {
-    max-width: 100px;
-  }
-  .img-lista {
-    max-width: 70px;
-  }
-  .img-alura {
-    max-width: 100px;
-  }
-}
-
-.tema__texto,
-.social__texto {
-  font-size: 10px;
-  color: var(--cor-conteudo);
-  text-shadow: var(--sombra-texto);
-}
-
-.social__texto {
-  font-size: 16px;
-}
-
-/* CONTATOS */
-.contatos__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.contatos__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contatos__icon {
-  width: 70px;
-  height: 70px;
-  transition: transform 0.3s;
-}
-
-.contatos__icon:hover {
-  transform: scale(1.1);
-}
-
-.contatos__curriculo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.cv__download {
-  background-color: var(--cor-conteudo);
-  color: var(--cor-menu);
-  padding: 20px;
-  border: none;
-  border-radius: 7px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.cv__download:hover {
-  transform: scale(1.1);
-}
-
-/* RODAPÉ */
-.rodape {
-  margin-top: 80px;
-  padding: 20px;
-  text-align: center;
-  background-color: var(--cor-conteudo);
-  color: var(--cor-menu);
-  font-size: 10px;
-}
-
-@media (max-width: 768px) {
-  .cabecalho {
-    padding: 15px 20px;
-  }
-  .apresentacao,
-  .habilidades,
-  .projetos,
-  .contatos {
-    padding: 40px 15px;
-    max-width: 95%;
-  }
 }
