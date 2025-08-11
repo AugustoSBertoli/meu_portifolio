@@ -3,6 +3,7 @@
 @import url("styles/projetos.css");
 @import url("styles/contatos.css");
 @import url("styles/rodape.css");
+@import url("styles/cursos.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 
@@ -10,7 +11,7 @@
   --cor-fundo: #1C1C1C;
   --preto: #000000;
   --branco: #EAEAEA;
-  --sombra-texto: 1px 1px 3px var(--branco);
+  --sombra-texto: 1px 1px 3px #999999;
 }
 
 * {
@@ -27,6 +28,8 @@ body {
 
 /* SEÇÕES GERAIS */
 .apresentacao,
+.formacoes,
+.cursos,
 .habilidades,
 .projetos,
 .contatos {
@@ -42,6 +45,8 @@ body {
 }
 
 .apresentacao__titulo,
+.formacoes__titulo,
+.cursos__titulo,
 .habilidades__titulo,
 .projetos__titulo,
 .contatos__titulo {
@@ -51,9 +56,11 @@ body {
 }
 
 .apresentacao__texto,
+.formacoes__texto,
+.cursos__texto,
 .habilidades__texto,
 .projetos__texto,
 .contatos__texto {
-  font-size: 17px;
+  font-size: 16px;
   margin: 15px 0 30px;
 }

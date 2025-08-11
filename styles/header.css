@@ -59,6 +59,7 @@
 }
 
 .lista-menu__link {
+  text-decoration: none;
   background: var(--preto);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
