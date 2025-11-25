@@ -37,6 +37,10 @@
   object-fit: cover;
 }
 
+.img-seunoura {
+    max-width: 200px;
+  }
+
 @media (max-width: 480px) {
   .img-carrinho {
     max-width: 100px;
@@ -45,6 +49,9 @@
     max-width: 70px;
   }
   .img-alura {
+    max-width: 100px;
+  }
+  .img-seunoura {
     max-width: 100px;
   }
 }

@@ -4,9 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Augusto De Souza Bertoli - Estudante ADS</title>
+  <title>Portfólio | Augusto De Souza Bertoli - Desenvolvedor</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <meta name="google-site-verification" content="03Qo13SDrVYv6jrH0rDW0XhStbQQRDWxE9ibIB2eCk4" />
+  <meta name="description"
+    content="Portfólio de Augusto Bertoli — Desenvolvedor com experiência em C#, Python, SQL, HTML, CSS e criação de sistemas.">
+  <meta name="keywords" content="Desenvolvedor, Programador, C#, Python, SQL, Portfólio, Augusto Bertoli, Dev Júnior">
+  <meta name="author" content="Augusto Bertoli">
+
 </head>
 
 <body>
@@ -122,12 +128,7 @@
       <li class="item-lista">HTML e CSS: Responsividade com MOBILE-FIRST</li>
       <li class="item-lista">HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</li>
       <li class="item-lista">HTML e CSS: Trabalhando com responsividade e publicação de projetos</li>
-    </ul>
 
-    <ul class="curso-lista">
-      <li class="item-lista">HTTP: entendendo a web por baixo dos panos</li>
-      <li class="item-lista">Windows Forms com C#: Formulários, componentes e eventos</li>
-      <li class="item-lista">JavaScript: construindo páginas dinâmicas</li>
     </ul>
   </section>
 
@@ -186,12 +187,41 @@
         </a>
         <p class="tema__texto">Livraria AluraBooks</p>
       </div>
+      <div class="projetos__item">
+        <a href="https://augustosbertoli.github.io/SeuNouraTechSuporte/">
+          <img src="img/homeChatbotOn.PNG" alt="Site SeuNouraTechSuport" class="projetos__img img-seunoura">
+        </a>
+        <p class="tema__texto">SeuNouraTechSuport</p>
+      </div>
     </div>
   </section>
 
   <section class="contatos" id="contatos">
     <h2 class="contatos__titulo">Contatos</h2>
     <p class="contatos__texto">Onde você pode entrar em contato comigo</p>
+    <div class="formulario__container">
+      <form class="formulario" action="https://formspree.io/f/xldknppg" method="POST">
+
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="Nome" required placeholder="Seu nome">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="Email" required placeholder="seu.email@exemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="Mensagem" required placeholder="O que você gostaria de dizer?"></textarea>
+        </div>
+
+        <button type="submit" class="formulario__botao">Enviar</button>
+      </form>
+
+    </div>
+
     <div class="contatos__links">
       <div class="contatos__item">
         <a href="https://instagram.com/augusto.bertoli">
@@ -218,7 +248,7 @@
         <p class="social__texto">Gmail</p>
       </div>
       <div class="contatos__curriculo">
-        <a href="docs/Currículo Augusto D S Bertoli.pdf" download>
+        <a href="docs/Currículo_Augusto_D_S_Bertoli.pdf" download>
           <button class="cv__download">Download CV</button>
         </a>
       </div>
@@ -233,4 +263,3 @@
 </body>
 
 </html>
-
