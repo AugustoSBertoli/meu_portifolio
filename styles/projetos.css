@@ -38,20 +38,31 @@
 }
 
 .img-seunoura {
-    max-width: 200px;
-  }
+  max-width: 200px;
+}
+
+.img-loja-carros {
+  max-width: 200px;
+}
 
 @media (max-width: 480px) {
   .img-carrinho {
     max-width: 100px;
   }
+
   .img-lista {
     max-width: 70px;
   }
+
   .img-alura {
     max-width: 100px;
   }
+
   .img-seunoura {
+    max-width: 100px;
+  }
+
+  .img-loja-carros {
     max-width: 100px;
   }
 }
